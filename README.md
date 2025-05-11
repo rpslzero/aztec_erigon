@@ -61,7 +61,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
     ```
     echo "#Aztec and Erigon Alias" >> $HOME/.profile
     echo 'alias aztec.log="docker logs aztec -f"' >> $HOME/.profile
-    echo 'alias aztec.sync="curl -s -X POST -H 'Content-Type: application/json' -d '{\"jsonrpc\":\"2.0\",\"method\":\"node_getL2Tips\",\"params\":[],\"id\":67}' http://localhost:8080 | jq" >> $HOME/.profile
+    echo 'alias aztec.sync="curl -s -X POST -H 'Content-Type: application/json' -d '{\"jsonrpc\":\"2.0\",\"method\":\"node_getL2Tips\",\"params\":[],\"id\":67}' http://localhost:8080 | jq"' >> $HOME/.profile
     echo 'alias sepolia.log="docker logs erigon -f"' >> $HOME/.profile
     echo 'alias prometheus.log="docker logs prometheus -f"' >> $HOME/.profile
     echo 'alias grafana.log="docker logs grafana -f"' >> $HOME/.profile
