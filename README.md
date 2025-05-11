@@ -1,5 +1,5 @@
 # It's in-one bundle Aztec Node and Erigon Sepolia Minimal Node with Grafana Dashboard
-What is Aztec?
+## What is Aztec?
 Aztec is a Privacy-First L2 on Ethereum
 On Ethereum today, everything is publicly visible, by everyone. In the real world, people enjoy privacy. Aztec brings privacy to Ethereum.
 
@@ -13,11 +13,17 @@ To make this possible, Aztec is not EVM compatible and is extending the Ethereum
 
 To learn more about how Aztec achieves these things, check out the Aztec concepts overview - https://docs.aztec.network/aztec
 
+## This guide will help you to start all the conteiners, aztec node will wait for full synchronization of erigon node, and as soon as the upper block will be reached, aztec node will start, download backup from Google Cloud and start synchronization with Aztec Network
+
+### Logs can be observed:
+
+- *http://you_ip_address:3000*
+
 ## Hardware Requirements
 **Minimal Node:**
 - At least 4 cores
 - 16GB RAM or more
-- 256Gb - NVMe SSD   *will be in use 130Gb (May 2025)*
+- 256Gb - NVMe SSD   *Erigon will be use 130Gb (May 2025)*
 
 ## First Step
 - **Update packages**
@@ -44,6 +50,8 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 
 ## Second Step 
 - **Clone this repo to your server, navigate to aztec_erigon folder, open .env file with nano and past your Private Key and IP address**
+- 
+  **Never give your private keys to third parties!!!**
     ```
     git clone https://github.com/andrii1890/aztec_erigon.git
     mkdir -p $HOME/aztec_erigon/data/erigon/
@@ -68,4 +76,6 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
     source $HOME/.profile
     ```
     now you can simply find logs: 
-    aztec.sync aztec.log sepolia.log, prometheus.log, grafana.log, loki.log, promtail.log
+    *aztec.log sepolia.log, prometheus.log, grafana.log, loki.log*
+  
+## You are free to make any changes in docker-compose.yaml if you know what you do 😉
