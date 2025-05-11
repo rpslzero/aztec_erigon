@@ -66,7 +66,6 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
     echo 'alias prometheus.log="docker logs prometheus -f"' >> $HOME/.profile
     echo 'alias grafana.log="docker logs grafana -f"' >> $HOME/.profile
     echo 'alias loki.log="docker logs loki -f"' >> $HOME/.profile
-    echo 'alias promtail.log="docker logs promtail -f"' >> $HOME/.profile
     source $HOME/.profile
     ```
     now you can simply find logs: 
