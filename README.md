@@ -20,6 +20,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 - *http://you_ip_address:3000*
 
 ## Hardware Requirements
+### DONT USE CONTABO servers!!!
 **Minimal Node:**
 - At least 4 cores
 - 16GB RAM or more
