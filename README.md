@@ -22,7 +22,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 ## Hardware Requirements
 ### DONT USE CONTABO servers!!!
 **Minimal Node:**
-- At least 4 cores
+- At least 4 cores / 8 threads
 - 16GB RAM or more
 - 256Gb - NVMe SSD   *Erigon will be use 130Gb (May 2025)*
 
