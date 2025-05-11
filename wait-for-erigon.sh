@@ -42,4 +42,4 @@ while true; do
 done
 
 echo "Starting Aztec..."
-exec node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer --port 8081
+exec node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer
