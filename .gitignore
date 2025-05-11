@@ -1,0 +1,5 @@
+.env
+keystore-*
+.DS_Store
+data/erigon/
+data/aztec/
