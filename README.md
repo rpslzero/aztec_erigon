@@ -72,7 +72,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 
 ## In 4-5 hours check your sync
 ```
-curl -s http://localhost:8080/status
+curl -s http://localhost:8080/status | jq
 ```
 ## if it's OK. move next to the https://discord.com/channels/1144692727120937080/1367196595866828982
 ```
