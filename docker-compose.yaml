@@ -54,6 +54,7 @@ services:
       DATA_DIRECTORY: /data
       VALIDATOR_PRIVATE_KEY: $VALIDATOR_PRIVATE_KEY
       P2P_IP: $P2P_IP
+      AZTEC_PORT: 8081
       LOG_LEVEL: debug
     entrypoint: >
       sh -c '/wait-for-erigon.sh && node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --port 8081 --network alpha-testnet --node --archiver --sequencer'
