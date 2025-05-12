@@ -36,7 +36,7 @@ services:
       - --metrics
       - --metrics.addr=0.0.0.0
       - --metrics.port=6061
-      - --torrent.download.rate=900mb
+      - --torrent.download.rate=90mb
       - --nat=stun
     networks:
       - node
