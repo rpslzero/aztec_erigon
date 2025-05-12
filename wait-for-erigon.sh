@@ -40,6 +40,3 @@ while true; do
 
     sleep $SLEEP_INTERVAL
 done
-
-echo "Starting Aztec..."
-exec node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer
