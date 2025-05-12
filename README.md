@@ -42,6 +42,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
     ```
 
 - **Run Docker as a non-root user**
+- *if you under root can skip this*
     ```
     sudo usermod -aG docker $USER
     ```
@@ -51,7 +52,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 ## Second Step 
 - **Clone this repo to your server, navigate to aztec_erigon folder, open .env file with nano and past your Private Key and IP address**
 - 
-  **Never give your private keys to third parties!!!**
+  *Never give your private keys to third parties!!!*
     ```
     git clone https://github.com/andrii1890/aztec_erigon.git
     mkdir -p $HOME/aztec_erigon/data/erigon/
@@ -63,7 +64,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
     ```
     docker compose up -d
     ```
-### Logs can be observed:
+### Grafana Dashboard will be avaliable here:
 
 - *http://you_ip_address:3000*
 
