@@ -74,7 +74,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 ```
 curl -s http://localhost:8080/status | jq
 ```
-## if it's OK. move next to the https://discord.com/channels/1144692727120937080/1367196595866828982
+## if no result - just wait and try later, if it's OK. move next to the https://discord.com/channels/1144692727120937080/1367196595866828982
 ```
 /operator help
 ```
@@ -93,4 +93,4 @@ curl -s http://localhost:8080/status | jq
     now you can simply find logs: 
     *aztec.log sepolia.log, prometheus.log, grafana.log, loki.log*
   
-## You are free to make any changes in docker-compose.yaml if you know what you do 😉
+# You are free to make any changes in docker-compose.yaml if you know what you do 😉
