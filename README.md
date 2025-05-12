@@ -15,9 +15,6 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 
 ## This guide will help you to start all the conteiners, aztec node will wait for full synchronization of erigon node, and as soon as the upper block will be reached, aztec node will start, download backup from Google Cloud and start synchronization with Aztec Network
 
-### Logs can be observed:
-
-- *http://you_ip_address:3000*
 
 ### It's tested on dedicate server, DONT USE CONTABO servers!!!
 
