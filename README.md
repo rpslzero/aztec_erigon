@@ -66,6 +66,18 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
     ```
     docker compose up -d
     ```
+### Logs can be observed:
+
+- *http://you_ip_address:3000*
+
+## In 4-5 hours check your sync
+```
+curl -s http://localhost:8080/status
+```
+## if it's OK. move next to the https://discord.com/channels/1144692727120937080/1367196595866828982
+```
+/operator help
+```
 
 ## Third step
 - **Add alias for docker logs**
