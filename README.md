@@ -68,13 +68,29 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 
 - *http://you_ip_address:3000*
 
-## In 4-5 hours check your sync
+### In 4-5 hours check your sync
 ```
 curl -s http://localhost:8080/status
 ```
-## if no result - just wait and try later, if it's OK. move next to the https://discord.com/channels/1144692727120937080/1367196595866828982
+### if no result - just wait and try later, if - OK. move next to the https://discord.com/channels/1144692727120937080/1367196595866828982
 ```
 /operator help
+```
+## Register your node as a Validator
+```
+docker exec -it aztec \
+  node /usr/src/yarn-project/aztec/dest/bin/index.js add-l1-validator \
+    --l1-rpc-urls http://erigon:8545 \
+    --private-key YOUR PRIVATE KEY \
+    --attester YOUR WALLET ADDRESS \
+    --proposer-eoa YOUR WALLET ADDRESS \
+    --staking-asset-handler 0xF739D03e98e23A7B65940848aBA8921fF3bAc4b2 \
+    --l1-chain-id 11155111
+```
+### Actual finalized block number
+```
+curl -s -X POST -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"node_getL2Tips","params":[],"id":67}' http://localhost:8080 | jq -r '.result.proven.number'
+
 ```
 
 ## Third step
