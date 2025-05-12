@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 4,
+  "id": 5,
   "links": [],
   "panels": [
     {
@@ -63,7 +63,7 @@
           },
           "direction": "forward",
           "editorMode": "builder",
-          "expr": "{container=\"erigon\"} |= ``",
+          "expr": "{container=\"erigon\"} |= `INFO`",
           "queryType": "range",
           "refId": "A"
         }
@@ -6720,12 +6720,12 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "Aztec",
-  "uid": "fc759855-b7a4-4b97-a0c8-63026a06ee5a",
-  "version": 7
+  "title": "Aztec Copy",
+  "uid": "29e63e71-5234-4e05-a376-d5e6b454659d",
+  "version": 1
 }
