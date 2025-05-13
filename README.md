@@ -23,7 +23,7 @@ To learn more about how Aztec achieves these things, check out the Aztec concept
 **Minimal Node:**
 - At least 4 cores / 8 threads
 - 16GB RAM or more
-- 512b - NVMe SSD   *Erigon will be use 130Gb (May 2025)*
+- 512b - NVMe SSD   *Erigon will be use 150Gb (May 2025)*
 
 ## First Step
 - **Update packages**
