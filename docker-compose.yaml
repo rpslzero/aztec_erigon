@@ -55,7 +55,7 @@ services:
       AZTEC_PORT: 8080
       LOG_LEVEL: debug
     entrypoint: >
-      sh -c '/wait-for-erigon.sh && node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer'
+      sh -c '/wait-for-erigon.sh && node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer --p2p.maxTxPoolSize 1000000000'
     ports:
       - "40400:40400/tcp"
       - "40400:40400/udp"
